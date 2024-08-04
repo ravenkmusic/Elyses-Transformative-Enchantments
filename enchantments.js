@@ -82,7 +82,16 @@ export function seeingDouble(deck) {
    * @returns {number[]} ordered deck
    */
   export function perfectlyOrdered(deck) {
-    throw new Error('Implement the perfectlyOrdered function');
+    const sortedDeck = deck.sort((value1, value2) =>{
+      if(value1 < value2){
+        return -1;
+      }
+      if (value1 > value2){
+        return 1;
+      }
+      return 0;
+    });
+    return sortedDeck;
   }
   
   /**
