@@ -84,12 +84,12 @@ export function seeingDouble(deck) {
   export function perfectlyOrdered(deck) {
     const sortedDeck = deck.sort((value1, value2) =>{
       if(value1 < value2){
-        return -1;
+        return -1; //if card number is smaller than the other, it should be sorted first
       }
       if (value1 > value2){
-        return 1;
+        return 1; //if card number is bigger than the other, it should be sorted after
       }
-      return 0;
+      return 0; //card order doesn't change
     });
     return sortedDeck;
   }
