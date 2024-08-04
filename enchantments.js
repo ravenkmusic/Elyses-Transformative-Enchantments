@@ -70,8 +70,9 @@ export function seeingDouble(deck) {
    * @returns {number[]} deck with only 2s
    */
   export function twoIsSpecial(deck) {
-    throw new Error('Implement the twoIsSpecial function');
-  }
+    const onlyTwos = deck.filter((value) => value === 2);
+    return onlyTwos;
+  }  
   
   /**
    * Returns a perfectly order deck from lowest to highest.
