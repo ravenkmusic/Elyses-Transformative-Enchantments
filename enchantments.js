@@ -56,13 +56,9 @@ export function seeingDouble(deck) {
   
   export function sandwichTrick(deck) {
     let topCard = deck.shift();
-    console.log("Top card is " + topCard);
     let bottomCard = deck.pop();
-    console.log("Bottom card is " + bottomCard);
     let middleofDeck = deck.length / 2;
-    console.log("Middle index of deck is: " + middleofDeck);
     deck.splice(middleofDeck, 0, bottomCard, topCard);
-    console.log(deck);
     return deck;
   }
   
