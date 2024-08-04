@@ -42,8 +42,9 @@ export function seeingDouble(deck) {
    * @returns {number[]} deck with only two middle cards
    */
   export function middleTwo(deck) {
-    throw new Error('Implement the middleTwo function');
-  }
+    let twoMiddleCards = deck.slice(4, 6);
+    return twoMiddleCards;
+   }
   
   /**
    * Moves the outside two cards to the middle.
