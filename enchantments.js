@@ -101,6 +101,8 @@ export function seeingDouble(deck) {
    *
    * @returns {number[]} reordered deck
    */
-  export function reorder(deck) {
-    throw new Error('Implement the reorder function');
-  }  
+  
+export function reorder(deck) {
+  const reversedDeck = deck.reverse();
+  return reversedDeck
+}
